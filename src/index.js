@@ -1,6 +1,9 @@
 const express = require('express');
+const cors = require('cors');
 
 const app = express();
+
+app.use(cors());
 
 // tell express to get json from request body
 app.use(express.json());
